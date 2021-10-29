@@ -61,3 +61,49 @@
 }
 
 /* computer opponent styling */
+.play-body {
+    margin-top: 3%;
+    font-size: 125%;
+}
+
+.form {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 5%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-element {
+    flex: auto;
+    text-align: left;
+}
+
+#name {
+    height: 140%;
+    width: 70%;
+}
+
+#choice {
+    height: 140%;
+    width: 70%;
+    font-size: 75%;
+    text-align: center;
+}
+
+#submit {
+    height: 140%;
+    width: 300%;
+    font-size: 75%;
+    margin-left: -1200%;
+}
+
+.form-element1 {
+    width: 25%;
+}
+
+.form-element2 {
+    margin-left: -40%;
+    width: 25%;
+}

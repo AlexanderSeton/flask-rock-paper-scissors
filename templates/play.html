@@ -5,15 +5,21 @@
         <br>
         <div class="form-div">
             <form class="form" action="/play" method="post">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="choice">Choice:</label>
-                <select id="choice" name="choice">
-                    <option value="rock">Rock</option>
-                    <option value="paper">Paper</option>
-                    <option value="scissors">Scissors</option>
-                </select>
-                <input type="submit" value="Go">
+                <div class="form-element1">
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-element2">
+                    <label for="choice"><b>Choice:</b></label>
+                    <select id="choice" name="choice">
+                        <option value="rock">Rock</option>
+                        <option value="paper">Paper</option>
+                        <option value="scissors">Scissors</option>
+                    </select>
+                </div>
+                <div class="form-element3">
+                    <input type="submit" value="Go" id="submit">
+                </div>
               </form>
         </div>
     </div>
