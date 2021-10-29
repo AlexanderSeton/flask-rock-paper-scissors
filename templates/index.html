@@ -6,10 +6,18 @@
             <br>
             <p>
                 {{player1_name}} chose: {{player1_choice}}
+                {%if player1_choice == "rock"%}&#129704;
+                {%elif player1_choice == "paper"%}&#128220;
+                {%elif player1_choice == "scissors"%}&#9986;&#65039;
+                {%endif%}
             </p>
             <br>
             <p>
                 {{player2_name}} chose: {{player2_choice}}
+                {%if player2_choice == "rock"%}&#129704;
+                {%elif player2_choice == "paper"%}&#128220;
+                {%elif player2_choice == "scissors"%}&#9986;&#65039;
+                {%endif%}
             </p>
         </div>
         <br><br><br><br>
