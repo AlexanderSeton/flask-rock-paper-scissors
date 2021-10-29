@@ -17,6 +17,6 @@ def index(choice1, choice2):
     if winner == "error":
         return "Error"
     elif winner == None:
-        return render_template("index.html", title="Rock, Paper, Scissors Game", player1_name=player1.name, player1_choice=player1.choice, player2_name=player2.name, player2_choice=player2.choice, winner_name="Draw")
+        return render_template("index.html", title="Result", player1_name=player1.name, player1_choice=player1.choice, player2_name=player2.name, player2_choice=player2.choice, winner_name="Draw")
     else:
-        return render_template("index.html", title="Rock, Paper, Scissors Game", player1_name=player1.name, player1_choice=player1.choice, player2_name=player2.name, player2_choice=player2.choice, winner_name=winner.name)
+        return render_template("index.html", title="Result", player1_name=player1.name, player1_choice=player1.choice, player2_name=player2.name, player2_choice=player2.choice, winner_name=winner.name)

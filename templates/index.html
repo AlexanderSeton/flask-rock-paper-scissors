@@ -1,18 +1,24 @@
 {%extends "base.html"%}
 {%block content%}
-    <div>
-        <h3>Choices</h3>
-        <p>
-            {{player1_name}} chose: {{player1_choice}}
-        </p>
-        <p>
-            {{player2_name}} chose: {{player2_choice}}
-        </p>
-    </div>
-    <div>
-        <h3>Result</h3>
-        <p>
-            The winner is: {{winner_name}}
-        </p>
+    <div class="result-body">
+        <div>
+            <h3 class="underlined">Choices</h3>
+            <br>
+            <p>
+                {{player1_name}} chose: {{player1_choice}}
+            </p>
+            <br>
+            <p>
+                {{player2_name}} chose: {{player2_choice}}
+            </p>
+        </div>
+        <br><br><br><br>
+        <div>
+            <h3 class="underlined">Result</h3>
+            <br>
+            <p>
+                The winner is: <b>{{winner_name}}</b> &#128081;
+            </p>
+        </div>
     </div>
 {%endblock%}

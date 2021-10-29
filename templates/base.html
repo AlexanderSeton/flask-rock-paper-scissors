@@ -1,18 +1,25 @@
 <html>
     <head>
-        <title>{{title}}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <title>{{title}} - Rock, Paper, Scissors Game</title>
     </head>
-    <body>
-        <div>
-            <h1>{{title}}</h1>
+    <body class="body">
+        <div class="title-bar">
+            <div id="logo-area">
+            <h1 id="main-title">{{title}}</h1>
+            <h5>Rock, Paper, Scissors Game</h5>
+            </div>
             <nav>
                 <ul>
-                    <li>
-                        <a href="/welcome">Home</a>
+                    <li id="list-item-home-link">
+                        <a href="/welcome" id="home-link">Home</a>
                     </li>
                 </ul>
             </nav>
         </div>
+        <div class="block-content">
         {%block content%}{%endblock%}
+        </div>
     </body>
 </html>
