@@ -14,6 +14,16 @@
     background-color: #557895;
 }
 
+#home-link {
+    text-decoration: none;
+    color: black;
+}
+
+#computer-opponent-link {
+    text-decoration: none;
+    color: black;
+}
+
 #title-list {
     display: flex;
     flex-flow: row nowrap;
@@ -107,4 +117,21 @@
 .form-element2 {
     margin-left: -40%;
     width: 25%;
+}
+
+/* instructions further styling */
+.all-instructions {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: left;
+    align-items: center;
+}
+
+#two-player-instructions {
+    flex: 50%;
+}
+
+#one-player-instructions {
+    flex: 50%;
+    margin-left: -2%;
 }
