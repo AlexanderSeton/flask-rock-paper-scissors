@@ -20,3 +20,7 @@ def index(choice1, choice2):
         return render_template("index.html", title="Result", player1_name=player1.name, player1_choice=player1.choice, player2_name=player2.name, player2_choice=player2.choice, winner_name="Draw")
     else:
         return render_template("index.html", title="Result", player1_name=player1.name, player1_choice=player1.choice, player2_name=player2.name, player2_choice=player2.choice, winner_name=winner.name)
+
+@app.route("/play")
+def play_against_computer():
+    return "Play vs computer"

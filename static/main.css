@@ -14,6 +14,18 @@
     background-color: #557895;
 }
 
+#title-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
 #logo-area {
     flex-flow: column;
     margin-left: 5%;
@@ -24,10 +36,8 @@
     list-style: none;
     /* border: 1px solid black; */
     font-size: 135%;
-}
-
-#home-link {
-    margin-right: 250px;
+    text-align: center;
+    margin-right: 100px;
 }
 
 .body {
