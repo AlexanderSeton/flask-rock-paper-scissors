@@ -3,6 +3,10 @@ from app import app
 from models.player import Player
 from models.game import Game
 
+@app.route("/welcome")
+def welcome():
+    return render_template("welcome.html", title="Welcome")
+
 @app.route("/<choice1>/<choice2>")
 def index(choice1, choice2):
     game1 = Game()
