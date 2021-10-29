@@ -1,5 +1,4 @@
 class Game:
-    
     def calculate_winner(self, player1, player2):
         player1.choice = player1.choice.lower()
         player2.choice = player2.choice.lower()
@@ -21,4 +20,4 @@ class Game:
             elif player2.choice == "paper":
                 return player1
         else:
-            return None
+            return "error"

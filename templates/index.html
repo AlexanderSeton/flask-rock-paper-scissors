@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+{%block content%}
+    <div>
+        <h3>Choices</h3>
+        <p>
+            {{player1_name}} chose: {{player1_choice}}
+        </p>
+        <p>
+            {{player2_name}} chose: {{player2_choice}}
+        </p>
+    </div>
+    <div>
+        <h3>Result</h3>
+        <p>
+            The winner is: {{winner_name}}
+        </p>
+    </div>
+{%endblock%}
