@@ -1,3 +1,6 @@
+from random import choice
+from models.player import Player
+
 class Game:
     def calculate_winner(self, player1, player2):
         player1.choice = player1.choice.lower()
@@ -22,3 +25,8 @@ class Game:
                 return player2
             elif player2.choice == "paper":
                 return player1
+    
+    def generate_computer_player(self):
+        computer_choice = choice(["rock", "paper", "scissors"])
+        computer_player = Player("Computer", computer_choice)
+        return computer_player
